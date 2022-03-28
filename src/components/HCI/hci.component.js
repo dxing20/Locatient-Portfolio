@@ -25,7 +25,7 @@ const HCI = () => {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
             autem culpa voluptates eveniet veritatis aspernatur repellat
             exercitationem soluta, corporis numquam labore iusto, delectus
-            corrupti expedita error accusantium assumenda, aut iure?
+            corrupti expedita error accusantium assumenda, aut iures?
           </p>
         </div>
       </div>
