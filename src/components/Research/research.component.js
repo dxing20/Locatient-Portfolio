@@ -310,24 +310,19 @@ const Research = () => {
             we chose MongoDB as our database.
 
           </p>
-          <div className="case">Simulating Administrative Requests</div>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-            autem culpa voluptates eveniet veritatis aspernatur repellat
-            exercitationem soluta, corporis numquam labore iusto, delectus
-            corrupti expedita error accusantium assumenda, aut iure?
-          </p>
         </div>
       </div>
       <div className="content-block">
         <div className="subtitle">Summary</div>
         <div className="text">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-            autem culpa voluptates eveniet veritatis aspernatur repellat
-            exercitationem soluta, corporis numquam labore iusto, delectus
-            corrupti expedita error accusantium assumenda, aut iure?
+            After doing ample research for methods to determine patients’ locations in the hospital, we have decided to go with QR codes. To build the system, we have come up with the following tech stack:
           </p>
+          <ul>
+            <li>Mobile Scanner App: Flutter</li>
+            <li>Client Frontend website: ReactJS </li>
+            <li>Backend and Database: NodeJS + MongoDB</li>
+          </ul>
           <div className="case">References</div>
           <ol>
             <li>
