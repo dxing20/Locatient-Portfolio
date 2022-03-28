@@ -186,10 +186,7 @@ const Research = () => {
           <p></p>
           <div className="case">Dashboard</div>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-            autem culpa voluptates eveniet veritatis aspernatur repellat
-            exercitationem soluta, corporis numquam labore iusto, delectus
-            corrupti expedita error accusantium assumenda, aut iure?
+            TEST
           </p>
           <div className="case">Scanner</div>
           <p>
