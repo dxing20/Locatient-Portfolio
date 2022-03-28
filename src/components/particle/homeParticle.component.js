@@ -17,7 +17,7 @@ const ParticleBubbles = () => {
         interactivity: {
           events: {
             onHover: {
-              enable: true,
+              enable: false,
               mode: "attract",
             },
             resize: true,
