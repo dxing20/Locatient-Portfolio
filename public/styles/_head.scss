@@ -1,0 +1,212 @@
+section.head {
+  height: 600px;
+  @media only screen and (min-width: $laptop) {
+    height: 700px;
+  }
+  @media only screen and (min-width: $monitor) {
+    height: 850px;
+  }
+  //border: 2px solid pink; //-
+  margin: 0px 20px 0px 20px;
+
+  div.bg-border {
+    position: absolute;
+    top: 20px;
+    height: 650px;
+    @media only screen and (min-width: $laptop) {
+      height: 750px;
+    }
+    @media only screen and (min-width: $monitor) {
+      height: 900px;
+    }
+    left: 20px;
+    right: 20px;
+    z-index: -5;
+    border: 2px solid rgba(82, 82, 248, 0.295);
+    @media only screen and (max-width: $laptop) {
+      border: 1px solid rgba(82, 82, 248, 0.295);
+    }
+  }
+  .part-1 {
+    // border: 2px solid red; //-
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    position: absolute;
+    height: 500px;
+    z-index: 1;
+    padding-left: 30px;
+    pointer-events: none;
+    .loc {
+      //border: 2px solid aqua;
+      //@include box-blur;
+
+      width: 450px;
+      transform: translateY(50%);
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-direction: column;
+      @media only screen and (max-width: $portrait) {
+        width: 300px;
+        transform: translateY(100%);
+      }
+      @media only screen and (min-width: $portrait) {
+        width: 300px;
+        transform: translateY(80%);
+      }
+      @media only screen and (min-width: $tablet) {
+        width: 300px;
+        transform: translateY(50%);
+      }
+      @media only screen and (min-width: $laptop) {
+        width: 400px;
+        transform: translateY(50%);
+      }
+
+      .head-title {
+        .head-letter {
+          position: absolute;
+          transform: scale(4) translate(-5%, -5%) !important;
+          color: rgba(82, 82, 248, 0.445);
+          z-index: 9;
+        }
+        z-index: 9;
+        font-size: xx-large;
+        font-weight: 600;
+        transform: scale(1.5) translateX(25%);
+        display: block;
+      }
+      .head-text {
+        background-color: rgba(255, 255, 255, 0.205);
+        padding: 5px;
+        margin: 5px;
+        z-index: 9;
+      }
+    }
+    @media only screen and (min-width: $monitor) {
+      justify-content: center;
+      transform: translateX(-400px);
+    }
+  }
+
+  .part-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    position: absolute;
+    height: 500px;
+    z-index: 0;
+    width: 95vw;
+    padding-right: 30px;
+    .loc {
+      position: relative;
+      .dashboard {
+        position: absolute;
+        transform-origin: center;
+        transform: rotateX(-17deg) rotateY(30deg) rotateZ(20deg);
+        top: 30%;
+        left: 5%;
+        right: 30%;
+        height: 0;
+        padding-top: 50%;
+        perspective: 1000px;
+        // perspective-origin: 40% 50%;
+        background-image: url("/images/fash.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        z-index: 5;
+        transition: all 1s ease;
+        &:hover {
+          transform-origin: center;
+          transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(1.2);
+        }
+      }
+      .analytics {
+        position: absolute;
+        transform-origin: center;
+        transform: rotateX(-26deg) rotateY(-31deg) rotateZ(0deg);
+        top: 8%;
+        left: 55%;
+        right: 0%;
+        height: 0;
+        padding-top: 50%;
+        perspective: 1000px;
+        // perspective-origin: 40% 50%;
+        background-image: url("/images/ana.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        z-index: 4;
+        transition: all 1s ease;
+        &:hover {
+          z-index: 6;
+          border-radius: 2em;
+          transform-origin: center;
+          transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(1.2)
+            translateX(-20%) translateY(-10%);
+        }
+      }
+      .blob {
+        position: absolute;
+        top: 66%;
+        left: 54%;
+        right: 0%;
+        height: 0;
+        padding-top: 30%;
+        perspective: 1000px;
+        // perspective-origin: 40% 50%;
+        background-image: url("/images/blob.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        z-index: 4;
+        transition: all 1s ease;
+        &:hover {
+          z-index: 6;
+          border-radius: 2em;
+          transform-origin: center;
+          transform: rotateZ(-45deg) scale(1.5);
+        }
+      }
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: transparent;
+      @media only screen and (max-width: $portrait) {
+        width: 350px;
+        height: 310px;
+        transform: translateY(-25%);
+      }
+      @media only screen and (min-width: $portrait) {
+        width: 500px;
+        height: 430px;
+        transform: translateY(-25%);
+      }
+      @media only screen and (min-width: $tablet) {
+        width: 600px;
+        height: 500px;
+        transform: translateY(10%);
+      }
+      @media only screen and (min-width: $laptop) {
+        width: 700px;
+        height: 600px;
+        transform: translateY(0%);
+      }
+      @media only screen and (min-width: $monitor) {
+        width: 700px;
+        height: 600px;
+        transform: translateY(-20%);
+      }
+
+      //@include box-blur();
+      //border: 2px solid green;
+    }
+    @media only screen and (min-width: $monitor) {
+      justify-content: center;
+      transform: translateX(200px) translateY(40%);
+    }
+    // border: 2px solid green; //-
+  }
+}

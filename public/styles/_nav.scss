@@ -1,0 +1,301 @@
+@keyframes unveil {
+  0% {
+    stroke-dasharray: 1;
+    stroke: $theme-1;
+    stroke-width: 20px;
+    fill-opacity: 0;
+  }
+  80% {
+    stroke-dasharray: 1100; //2469.806;
+    stroke: $theme-1;
+    stroke-width: 20px;
+    fill-opacity: 0;
+  }
+  100% {
+    stroke-width: 0px;
+    fill: $theme-1;
+    fill-opacity: 1;
+    stroke: transparent;
+  }
+}
+@keyframes slide-out-title {
+  0% {
+    color: transparent;
+    transform: translate(-50%, 0%);
+  }
+  80% {
+    transform: translate(0%, 0%);
+    color: $theme-1;
+  }
+  100% {
+    transform: translate(0%, 0%);
+    color: $theme-1;
+  }
+}
+
+.animation-unveil {
+  animation: unveil 2s linear 1;
+}
+
+div.brand {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  white-space: nowrap;
+  padding: 5px;
+  svg {
+    width: 70px;
+    height: 70px;
+    transform: scale(1.2);
+
+    path {
+      width: 40px;
+      stroke-width: 0px;
+      fill-opacity: 1;
+      fill: $theme-1;
+      stroke: transparent;
+      transition: all 0.5s ease;
+    }
+    &:hover {
+      path {
+        stroke: $theme-1;
+        stroke-width: 20px;
+        fill-opacity: 0;
+      }
+    }
+  }
+  .brand-letter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .brand-title {
+      transition: all 0.5s ease-out;
+      font-size: x-large;
+      font-weight: 500;
+      margin: 0px 5px;
+      padding: 0px;
+      color: transparent;
+      transform: translate(-50%, 0%) scale(1.5);
+      animation: 2s linear 0s 1 slide-out-title;
+      animation-fill-mode: forwards;
+    }
+    .brand-subtitle {
+      font-size: large;
+      transition: all 0.5s ease-out;
+      margin: 0px 5px;
+      padding: 0px;
+      color: transparent;
+      transform: translate(-50%, 0%);
+      animation: 1.5s linear 0.5s 1 slide-out-title;
+      animation-fill-mode: forwards;
+    }
+  }
+}
+
+div.navItems {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  .navItem {
+    //border: 1px solid black;
+    padding: 5px;
+    margin: 0px 5px;
+    transition: all 0.2s linear;
+    //overflow: hidden;
+    @include magic-border(2px, rgb(191, 191, 255), 0.1s, 0);
+    p {
+      margin: 0px 0px 1px 0px;
+    }
+    // div {
+    //   border-bottom: 2px solid $theme-3;
+    //   transition: all 0.2s linear;
+    //   transform: translateX(-100%);
+    // }
+    // &:hover {
+    //   transform: scale(1.1);
+    //   div {
+    //     transform: translateX(0%);
+    //   }
+    // }
+  }
+  .navIcon {
+    padding: 10px;
+    border-radius: 100px;
+    border: 2px solid $theme-1;
+    height: 20px;
+    width: 20px;
+    margin: 0px 5px;
+    overflow: hidden;
+    background: linear-gradient(to top, $theme-1 50%, white 0);
+    background-size: 105% 210%;
+    background-position: 0% 0%;
+    transition: all 0.15s linear;
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+    &:hover {
+      background-position: 0% 96%;
+      svg {
+        path {
+          fill: white;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: $monitor) {
+    display: none;
+  }
+}
+
+.navMenu {
+  display: none;
+  padding: 10px;
+  border-radius: 100px;
+  border: 2px solid $theme-1;
+  height: 20px;
+  width: 20px;
+  margin: 0px 5px;
+  overflow: hidden;
+  background: linear-gradient(to top, $theme-1 50%, white 0);
+  div {
+    .bars {
+      width: 20px;
+      path {
+        fill: black;
+      }
+    }
+  }
+  background-size: 104% 208%;
+  background-position: 0% 0%;
+  transition: all 0.15s linear;
+  &:hover {
+    background-position: 0% 100%;
+    div {
+      .bars {
+        width: 20px;
+        path {
+          fill: white;
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: $monitor) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+}
+
+header {
+  padding: 30px;
+  position: sticky;
+  top: -5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  z-index: 99;
+}
+
+.backed {
+  box-shadow: 0px 5px 5px 2px rgba(0, 0, 0, 0.2);
+  padding: 30px 30px 10px 30px;
+  background-color: white;
+}
+
+@mixin panelW() {
+  width: 400px;
+  @media screen and (max-width: $laptop) {
+    width: 300px;
+  }
+  @media screen and (max-width: $tablet) {
+    width: 250px;
+  }
+  @media screen and (max-width: $portrait) {
+    width: 200px;
+  }
+}
+
+.panel {
+  position: absolute;
+  @include slider(true);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  transition: all 0.2s linear;
+  z-index: 10;
+  .panel-left {
+    height: 100vh;
+    flex-grow: 1;
+  }
+  .panel-right {
+    @include panelW();
+    //background-color: rgba(255, 0, 0, 0.5);
+    position: relative;
+    height: 100vh;
+    padding: 20px;
+    .shape-1 {
+      position: absolute;
+      top: -100%;
+      left: -50%;
+      height: 400%;
+      width: 200%;
+      z-index: -1;
+      background-color: rgba(94, 150, 255, 0.8);
+      transform: rotateZ(15deg);
+      @media only screen and (max-width: $portrait) {
+        transform: rotateZ(7deg);
+      }
+    }
+    .shape-2 {
+      position: absolute;
+      top: -100%;
+      left: 0px;
+      height: 400%;
+      width: 200%;
+      z-index: -2;
+      background-color: rgba(255, 0, 0, 0.5);
+      transform: rotateZ(-15deg);
+      @media only screen and (max-width: $portrait) {
+        transform: rotateZ(-7deg);
+      }
+    }
+    .verticalMenu {
+      height: 90%;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      justify-content: center;
+      .verticalItem {
+        padding: 10px;
+        border-bottom: 1px solid white;
+        display: block;
+        transition: transform 0.1s linear;
+        p {
+          margin: 0px;
+          font-size: x-large;
+          color: white;
+        }
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+    }
+  }
+}
+
+.panel.slided {
+  transform: translateX(0);
+}

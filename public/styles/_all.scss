@@ -1,0 +1,203 @@
+$portrait: 576px;
+$tablet: 768px;
+$laptop: 992px;
+$monitor: 1250px;
+
+$theme-1: rgb(39, 39, 39);
+$theme-2: rgba(94, 150, 255, 1);
+$theme-3: rgb(153, 189, 255);
+
+@mixin slider($mod: false) {
+  @if $mod {
+    transform: translateX(400px);
+    @media screen and (max-width: $laptop) {
+      transform: translateX(300px);
+    }
+    @media screen and (max-width: $tablet) {
+      transform: translateX(250px);
+    }
+    @media screen and (max-width: $portrait) {
+      transform: translateX(200px);
+    }
+  } @else {
+    transform: translateX(-450px);
+    @media screen and (max-width: $laptop) {
+      transform: translateX(-350px);
+    }
+    @media screen and (max-width: $tablet) {
+      transform: translateX(-300px);
+    }
+    @media screen and (max-width: $portrait) {
+      transform: translateX(-250px);
+    }
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  transition: all 0.2s linear;
+}
+.page {
+  transition: all 0.2s linear;
+
+  .lines {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    z-index: -5;
+    display: flex;
+
+    @media only screen and (max-width: $portrait) {
+      .line:nth-child(-n + 3) {
+        flex-grow: 1;
+        border-left: 1px solid rgba(82, 82, 248, 0.295);
+        height: 100%;
+      }
+    }
+
+    @media only screen and (min-width: $portrait) {
+      .line:nth-child(-n + 4) {
+        flex-grow: 1;
+        border-left: 1px solid rgba(82, 82, 248, 0.295);
+        height: 100%;
+      }
+    }
+
+    @media only screen and (min-width: $laptop) {
+      .line:nth-child(-n + 5) {
+        flex-grow: 1;
+        border-left: 2px solid rgba(82, 82, 248, 0.295);
+        height: 100%;
+      }
+    }
+
+    @media only screen and (min-width: $monitor) {
+      .line:nth-child(-n + 6) {
+        flex-grow: 1;
+        border-left: 2px solid rgba(82, 82, 248, 0.295);
+        height: 100%;
+      }
+    }
+
+    .line:first-child {
+      flex-grow: 1;
+      border-left: 0px;
+      height: 100%;
+    }
+  }
+}
+
+body.slided {
+  overflow-y: hidden;
+}
+
+.page.slided {
+  @include slider(false);
+  filter: blur(2px);
+}
+
+@mixin box-blur($radius: 20px, $len: 30px) {
+  background-color: white;
+  box-shadow: 0 0 $radius $len whitesmoke;
+}
+
+* {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+@mixin hoveringScale {
+  transition: transform 0.1s linear;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes slideHidder {
+  0% {
+    transform: rotateZ(90deg) translateX(0%);
+  }
+  10% {
+    transform: rotateZ(0deg) translateX(0%);
+  }
+  40% {
+    transform: rotateZ(0deg) translateX(0%);
+  }
+  100% {
+    transform: rotateZ(0deg) translateX(200vw);
+  }
+}
+
+.hidder {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 300vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  z-index: 100;
+  transform-origin: top left;
+  transform: rotateZ(90deg);
+
+  .blocker {
+    display: block;
+    position: absolute;
+    transform: translateX(-200vw);
+    background-color: transparent;
+    width: 300vw;
+    height: 100vh;
+  }
+  .slab {
+    position: absolute;
+    transform: translateX(-100vw);
+    width: 300vw;
+  }
+
+  .slab.n1 {
+    top: 0vh;
+    left: 0vw;
+
+    height: 16.7vh;
+    background-color: rgb(140, 98, 255);
+  }
+  .slab.n2 {
+    top: 16.7vh;
+    left: 16.7vw;
+    height: 16.8vh;
+    background-color: rgb(130, 85, 255);
+  }
+  .slab.n3 {
+    top: 33.3vh;
+    left: 33.3vw;
+    height: 16.8vh;
+    background-color: rgb(120, 71, 255);
+  }
+  .slab.n4 {
+    top: 50vh;
+    left: 50vw;
+    height: 16.8vh;
+    background-color: rgb(110, 58, 255);
+  }
+  .slab.n5 {
+    top: 66.6vh;
+    left: 66.6vw;
+    height: 16.8vh;
+    background-color: rgb(100, 44, 255);
+  }
+  .slab.n6 {
+    top: 83.3vh;
+    left: 83.3vw;
+    height: 16.8vh;
+    background-color: rgb(90, 30, 255);
+  }
+}
+
+.slide-in {
+  animation: slideHidder 1.5s backwards;
+}
