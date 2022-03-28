@@ -184,26 +184,131 @@ const Research = () => {
         <div className="subtitle">Technology</div>
         <div className="text">
           <p></p>
-          <div className="case">Dashboard</div>
+          <div className="case">Mobile App Scanner</div>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-            autem culpa voluptates eveniet veritatis aspernatur repellat
-            exercitationem soluta, corporis numquam labore iusto, delectus
-            corrupti expedita error accusantium assumenda, aut iure?
+            The scanner app is a proof-of-concept (PoC) placeholder for the actual
+            wall-mounted scanners that scans patients’ QR codes. As we want this
+            mobile app to be used by as many users as possible, it has to be cross-platform.
+            There are mainly 2 options for cross-platform app development: React Native,
+            developed by Facebook in 2015, and Flutter, developed by Google in 2018.
+            We will do a simple comparison between the 2 different tools, before coming
+            to a conclusion that using Flutter to develop a mobile scanner app that
+            simulates the scanners in an actual implementation is the best option.
           </p>
-          <div className="case">Scanner</div>
+          <div className="case">Comparison (Flutter vs React Native)</div>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-            autem culpa voluptates eveniet veritatis aspernatur repellat
-            exercitationem soluta, corporis numquam labore iusto, delectus
-            corrupti expedita error accusantium assumenda, aut iure?
+            React Native is an open-source mobile application framework that uses JavaScript,
+            and uses the same design as React. It has great stability due to being out on the
+            market for about 7 years, has many successful and prominent apps, and is backed
+            by a vast community. On the other hand, Flutter is a portable UI toolkit for
+            constructing apps using a single codebase, and uses Dart as its programming language.
+            While the downsides include having to learn Dart, a rather uncommon language,
+            Flutter apps are typically developed faster than React Native apps. Flutter also
+            has a rapidly growing community and popularity, which translates to strong support.
+            <br />
+            <br />
+            For the sake of this project, since we are only aiming to build a PoC scanner app,
+            we will be going with the faster and more efficient option, and that is Flutter.
           </p>
-          <div className="case">API</div>
+          <div className="case">Client Frontend</div>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-            autem culpa voluptates eveniet veritatis aspernatur repellat
-            exercitationem soluta, corporis numquam labore iusto, delectus
-            corrupti expedita error accusantium assumenda, aut iure?
+            Our client frontend is the front-facing end of the system, and thus every user
+            will be interacting with it to access all the functionalities that our system
+            provides. We will discuss what the best approach to develop our frontend is, and
+            attempt to conclude that building a website is the most sensible method. Furthermore,
+            we will also go into comparisons between the different development frameworks for a
+            website, and end off with choosing ReactJS as our framework.
+          </p>
+          <div className="case">Comparison (Mobile vs Web)</div>
+          <p>
+            We can develop our client application in 2 ways: mobile application or web application.
+            A mobile app is able to work offline, and provides more speed and functionalities as
+            they have more access to system resources. However, they are more costly, as they have
+            to be designed and built from scratch to accommodate different platforms and to maintain
+            after deployment.
+            <br />
+            <br />
+            On the other hand, a web application boasts ease of development and maintenance, and
+            they do not need to be downloaded - they function on browsers. The shortfalls are
+            that they do not work offline, have fewer features, and execute functions slower than
+            mobile apps. Our application needs to be used by the entire staff within the hospital,
+            which also means we have to select the approach with the highest user coverage,
+            using the least amount of resources. Hence, we decided to go with a web app.
+          </p>
+          <div className="case">Comparison (Web app frameworks - Angular, React, Vue)</div>
+          <p>
+            There are 3 main frameworks we can choose from: Angular, React, or Vue.
+            <br />
+            <br />
+            Angular, developed by Google in 2010, is the oldest of the 3 and has a complete
+            package, meaning most functionalities like state management and routing are in-built
+            libraries. However, the concepts of development are more unconventional, which proves
+            difficult to learn at the start.
+            <br />
+            <br />
+            React, developed by Facebook in 2013, has gained acceptance and support from a large
+            part of the developer community, and is able to integrate well with other frameworks.
+            It is a framework that is easy to learn and has great flexibility. However, while it
+            maintains a small core library, it needs to import multiple external libraries to
+            encompass most functionalities for a working app.
+            <br />
+            <br />
+            Vue, developed in 2014, is the newest of the lot, and does not have the backing of a
+            major company. Most of its support comes from open-source communities and developers,
+            and it has recently gained popularity with its newest release. It boasts a high level
+            of simplicity and flexibility, and is widely considered the easiest to learn out of
+            the 3. On the flipside, it has the same issue that React has, and needs 3rd-party
+            libraries to fully create a working app.
+            <br />
+            <br />
+            After taking the pros and cons of each framework into consideration, we have decided
+            to go with React. We believe in the short few months of time that we have to develop
+            a system that is rather complex, we want to use a framework that we are familiar and
+            comfortable working with.
+          </p>
+          <div className="case">Server and Backend</div>
+          <p>
+            Our intended system works by sending data from the QR codes that are scanned at each
+            room to the database. The client frontend then sends API requests to the backend
+            which pulls specific data from the database. This data is then shown on the client
+            frontend. As such, we have to select a reliable cloud database that simulates the
+            actual servers when implemented, and for using sample databases for development
+            and testing purposes. We will discuss the types of server-side frameworks and
+            databases, and explain our decisions on using NodeJS and MongoDB.
+          </p>
+          <div className="case">Comparison (Server-side frameworks - NodeJS)</div>
+          <p>
+            NodeJS is a JavaScript runtime environment that caters to structuring backend and
+            server side development. While there are a couple of other server-side
+            frameworks, NodeJS is by far the most efficient and productive as it is the only
+            one that uses JavaScript. This thus gives the entire development all the pros of
+            full stack JavaScript development, such as code sharing and reuse, and increased
+            speed and performance. This consequently provides us with more time for other
+            parts of development, while at the same time building it quickly and reliably.
+            Hence, we chose NodeJS.
+          </p>
+          <div className="case">Comparison (Databases - MongoDB, SQL)</div>
+          <p>
+            MongoDB is an open-source document database that operates as a non-relational,
+            unstructured, NoSQL database. Individual information is stored as documents
+            which are collections of fields, known as JSON files, and allow for dynamic
+            data processing and more flexibility as each collection need not have the
+            same set of fields. MongoDB also allows for horizontal scaling, by means of
+            adding more servers and expanding storage.
+            <br />
+            <br />
+            SQL databases, on the contrary, are typical relational databases. Data is
+            stored in rows within a table, which benefits a system that requests for
+            common characteristics, but is limited in terms of storage of hierarchical
+            data. SQL databases also facilitate vertical scaling, making it easier to
+            add functionalities to the system.
+            <br />
+            <br />
+            Our system is one that needs to pull data from patients dynamically and
+            efficiently. We also need to pick one that is the most similar to the
+            actual servers used when implemented, and is easily extendable. Hence,
+            we chose MongoDB as our database.
+
           </p>
           <div className="case">Simulating Administrative Requests</div>
           <p>
