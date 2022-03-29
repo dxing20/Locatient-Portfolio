@@ -310,24 +310,19 @@ const Research = () => {
             we chose MongoDB as our database.
 
           </p>
-          <div className="case">Simulating Administrative Requests</div>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-            autem culpa voluptates eveniet veritatis aspernatur repellat
-            exercitationem soluta, corporis numquam labore iusto, delectus
-            corrupti expedita error accusantium assumenda, aut iure?
-          </p>
         </div>
       </div>
       <div className="content-block">
         <div className="subtitle">Summary</div>
         <div className="text">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-            autem culpa voluptates eveniet veritatis aspernatur repellat
-            exercitationem soluta, corporis numquam labore iusto, delectus
-            corrupti expedita error accusantium assumenda, aut iure?
+            After doing ample research for methods to determine patients’ locations in the hospital, we have decided to go with QR codes. To build the system, we have come up with the following tech stack:
           </p>
+          <ul>
+            <li>Mobile Scanner App: Flutter</li>
+            <li>Client Frontend website: ReactJS </li>
+            <li>Backend and Database: NodeJS + MongoDB</li>
+          </ul>
           <div className="case">References</div>
           <ol>
             <li>
@@ -378,6 +373,21 @@ const Research = () => {
               smart phones," 2014 IEEE 11th International Multi-Conference on
               Systems, Signals & Devices (SSD14), 2014, pp. 1-4, doi:
               10.1109/SSD.2014.6808774.
+            </li>
+            <li>
+              Droids On Roids. 2022. Flutter vs React Native – What to Choose in 2022?. [online] Available at: https://www.thedroidsonroids.com/blog/flutter-vs-react-native-what-to-choose-in-2021#f10
+            </li>
+            <li>
+              CodeinWP. 2022. Angular vs React vs Vue: Which Framework to Choose in 2022. [online] Available at: https://www.codeinwp.com/blog/angular-vs-vue-vs-react/#who-wins
+            </li>
+            <li>
+              AltexSoft. 2022. The Good and the Bad of Node.js Web App Development. [online] Available at: https://www.altexsoft.com/blog/engineering/the-good-and-the-bad-of-node-js-web-app-development/
+            </li>
+            <li>
+              Sharma, A., Kharat, S. and Samuel, N., 2022. MongoDB vs SQL Databases: 4 Comprehensive Aspects. [online] Learn | Hevo. Available at: https://hevodata.com/learn/mongodb-vs-sql/
+            </li>
+            <li>
+              Medium. 2022. Mobile Apps vs Web — Apps: Which is the Better Option?. [online] Available at: https://sagaratechnology.medium.com/mobile-apps-vs-web-apps-which-is-the-better-option-868106c88730 [Accessed 28 March 2022].
             </li>
           </ol>
         </div>
