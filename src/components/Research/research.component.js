@@ -189,28 +189,28 @@ const Research = () => {
           <p></p>
           <div className="case">Mobile App Scanner</div>
           <p>
-            The scanner app is a proof-of-concept (PoC) placeholder for the
-            actual wall-mounted scanners that scans patients’ QR codes. As we
-            want this mobile app to be used by as many users as possible, it has
-            to be cross-platform. There are mainly 2 options for cross-platform
-            app development: React Native, developed by Facebook in 2015, and
-            Flutter, developed by Google in 2018. We will do a simple comparison
-            between the 2 different tools, before coming to a conclusion that
-            using Flutter to develop a mobile scanner app that simulates the
-            scanners in an actual implementation is the best option.
+            The scanner app is a proof-of-concept (PoC) placeholder for the actual wall-mounted scanners that scans patients’ QR codes. This mobile app is to be used by as many users as possible, hence it has to be cross-platform. We also have to consider the amount of time and resources that we have, and developing a full native app will most likely not be possible, which leads to the idea of building a hybrid app. The next part discusses the costs and benefits between hybrid and native app building, and tries to conclude that a hybrid app is the right choice for us. Moving on to the app development itself, there are mainly 2 options: React Native, developed by Facebook in 2015, and Flutter, developed by Google in 2018. We will do a simple comparison between the 2 different tools, before coming to a conclusion that using Flutter to develop a mobile scanner app that simulates the scanners in an actual implementation is the best option.
+          </p>
+          <div className="case">Comparison (Hybrid vs Native app)</div>
+          <p>
+            A native app is a software application built in a specific programming language, for the specific device platform, either iOS or Android[10], or both in the case of cross-platform. In this case, a native app is able to work offline, and offer a faster, more reliable and more responsive experience to users. However, native app development is more expensive and takes more time. We will discuss other factors in the section below when we compare between native, hybrid and web apps.
+            <br />
+            <br />
+            Meanwhile, a hybrid app is installed like a native app, but it runs as a web app built with JavaScript, HTML, and CSS, and runs in a simplified browser in the app, called webview. Hybrid apps are easier to build, and take less time and resources, but suffer on performance as they are bottlenecked by the webview, which is responsible for the UI and JavaScript code.
+            <br />
+            <br />
+            As mentioned, the mobile scanner is a proof of concept, and we are not using an app in actual implementation, hence we want the option that is the fastest and cheapest to build. We chose to build a hybrid app.
           </p>
           <div className="case">Comparison (Flutter vs React Native)</div>
           <p>
-            React Native is an open-source mobile application framework that
-            uses JavaScript, and uses the same design as React. It has great
-            stability due to being out on the market for about 7 years, has many
-            successful and prominent apps, and is backed by a vast community. On
-            the other hand, Flutter is a portable UI toolkit for constructing
-            apps using a single codebase, and uses Dart as its programming
-            language. While the downsides include having to learn Dart, a rather
-            uncommon language, Flutter apps are typically developed faster than
-            React Native apps. Flutter also has a rapidly growing community and
-            popularity, which translates to strong support.
+            React Native is an open-source mobile application framework that uses JavaScript,
+            and uses the same design as React[11]. It has great stability due to being out on the
+            market for about 7 years, has many successful and prominent apps, and is backed
+            by a vast community. On the other hand, Flutter is a portable UI toolkit for
+            constructing apps using a single codebase, and uses Dart as its programming language.
+            While the downsides include having to learn Dart, a rather uncommon language,
+            Flutter apps are typically developed faster than React Native apps. Flutter also
+            has a rapidly growing community and popularity, which translates to strong support.
             <br />
             <br />
             For the sake of this project, since we are only aiming to build a
@@ -228,31 +228,25 @@ const Research = () => {
             frameworks for a website, and end off with choosing ReactJS as our
             framework.
           </p>
-          <div className="case">Comparison (Mobile vs Web)</div>
+          <div className="case">Comparison (Native vs Web vs Hybrid)</div>
           <p>
-            We can develop our client application in 2 ways: mobile application
-            or web application. A mobile app is able to work offline, and
-            provides more speed and functionalities as they have more access to
-            system resources. However, they are more costly, as they have to be
-            designed and built from scratch to accommodate different platforms
-            and to maintain after deployment.
+            We can develop our client application in 3 ways: native app, hybrid app, or web app. A native app is able to work offline, and provides more speed and functionalities as they have more access to system resources. However, they are more costly, as they have to be designed and built from scratch to accommodate different platforms and to maintain after deployment.[12]
             <br />
             <br />
-            On the other hand, a web application boasts ease of development and
-            maintenance, and they do not need to be downloaded - they function
-            on browsers. The shortfalls are that they do not work offline, have
-            fewer features, and execute functions slower than mobile apps. Our
-            application needs to be used by the entire staff within the
-            hospital, which also means we have to select the approach with the
-            highest user coverage, using the least amount of resources. Hence,
-            we decided to go with a web app.
+            Web apps boast ease of development and maintenance, and they do not need to be downloaded - they function on browsers, which puts web apps as the cheapest to build. The shortfalls are that they do not work offline, have fewer features, and execute functions slower than mobile apps.
+            <br />
+            <br />
+            Hybrid apps, as mentioned in the previous comparison, are a mix of both web and native apps. They are able to fully utilise the devices’ resources as they are installed like a native app, while also cheaper to build as they actually run on webviews. But, they have performance issues as they are reliant on the webview to display their functionalities.
+            <br />
+            <br />
+            Our application needs to be used by the entire staff within the hospital, which also means we have to select the approach with the highest user coverage, using the least amount of resources. A web app is the cheapest and is the fastest to build, and considering the short amount of time we have, we decided to go with a web app.
+
           </p>
           <div className="case">
             Comparison (Web app frameworks - Angular, React, Vue)
           </div>
           <p>
-            There are 3 main frameworks we can choose from: Angular, React, or
-            Vue.
+            There are 3 main frameworks we can choose from: Angular, React, or Vue.[13]
             <br />
             <br />
             Angular, developed by Google in 2010, is the oldest of the 3 and has
@@ -280,11 +274,7 @@ const Research = () => {
             app.
             <br />
             <br />
-            After taking the pros and cons of each framework into consideration,
-            we have decided to go with React. We believe in the short few months
-            of time that we have to develop a system that is rather complex, we
-            want to use a framework that we are familiar and comfortable working
-            with.
+            Our team have had experience in building React apps before, and are familiar with the libraries that are needed for an app such as this. Despite the fact that React is not the easiest framework to learn, its ease of integration with other frameworks makes up for it, hence we have decided to go with it. We believe in the short few months of time that we have to develop a system that is rather complex, we want to use a framework that we are familiar and comfortable working with.
           </p>
           <div className="case">Server and Backend</div>
           <p>
@@ -298,29 +288,16 @@ const Research = () => {
             server-side frameworks and databases, and explain our decisions on
             using NodeJS and MongoDB.
           </p>
-          <div className="case">
-            Comparison (Server-side frameworks - NodeJS)
-          </div>
+          <div className="case">Comparison (Server-side frameworks - Django vs ExpressJS + NodeJS)</div>
           <p>
-            NodeJS is a JavaScript runtime environment that caters to
-            structuring backend and server side development. While there are a
-            couple of other server-side frameworks, NodeJS is by far the most
-            efficient and productive as it is the only one that uses JavaScript.
-            This thus gives the entire development all the pros of full stack
-            JavaScript development, such as code sharing and reuse, and
-            increased speed and performance. This consequently provides us with
-            more time for other parts of development, while at the same time
-            building it quickly and reliably. Hence, we chose NodeJS.
+            Django[15] is a high-level Python web framework that allows rapid development to facilitate web developers in building applications quickly. It provides better performance due to an inbuilt template system and has better cost-efficiency due to being more dynamic.
+            <br />
+            <br />
+            ExpressJS[16] is a backend web app framework for NodeJS, and is a layer developed on top of NodeJS that aids administering routes and the server. NodeJS is a JavaScript runtime environment that caters to structuring backend and server side development. While it suffers from lower performance and being less cost-effective, NodeJS is by far the most efficient and productive as it is the only server-side framework that uses JavaScript. This thus gives the entire development all the pros of full stack JavaScript development, such as code sharing and reuse, and increased speed and performance. This consequently provides us with more time for other parts of development, while at the same time building it quickly and reliably. Hence, we chose NodeJS.
           </p>
-          <div className="case">Comparison (Databases - MongoDB, SQL)</div>
+          <div className="case">Comparison (Databases - NoSQL (MongoDB) vs SQL)</div>
           <p>
-            MongoDB is an open-source document database that operates as a
-            non-relational, unstructured, NoSQL database. Individual information
-            is stored as documents which are collections of fields, known as
-            JSON files, and allow for dynamic data processing and more
-            flexibility as each collection need not have the same set of fields.
-            MongoDB also allows for horizontal scaling, by means of adding more
-            servers and expanding storage.
+            NoSQL are document databases that operate as non-relational and unstructured databases.[17] In MongoDB, a NoSQL database, individual information is stored as documents which are collections of fields, known as JSON files, and allow for dynamic data processing and more flexibility as each collection need not have the same set of fields. It also allows for horizontal scaling, by means of adding more servers and expanding storage. Time series collections are present in MongoDB which stores sequences of measurements over a period of time, which increases query efficiency.
             <br />
             <br />
             SQL databases, on the contrary, are typical relational databases.
@@ -346,9 +323,9 @@ const Research = () => {
             build the system, we have come up with the following tech stack:
           </p>
           <ul>
-            <li>Mobile Scanner App: Flutter</li>
-            <li>Client Frontend website: ReactJS </li>
-            <li>Backend and Database: NodeJS + MongoDB</li>
+            <li>Mobile Scanner App: Hybrid Flutter App</li>
+            <li>Client Frontend website: ReactJS Web App</li>
+            <li>Backend and Database: ExpressJS + NodeJS + MongoDB</li>
           </ul>
           <div className="case">References</div>
           <ol>
@@ -399,6 +376,7 @@ const Research = () => {
               10.1109/SSD.2014.6808774.
             </li>
             <li>
+<<<<<<< HEAD
               {
                 "Droids On Roids. 2022. Flutter vs React Native – What to Choose in 2022?. [online] Available at: <https://www.thedroidsonroids.com/blog/flutter-vs-react-native-what-to-choose-in-2021#f10> [Accessed 29 March 2022]."
               }
@@ -417,6 +395,32 @@ const Research = () => {
               {
                 "Medium. 2022. Mobile Apps vs Web — Apps: Which is the Better Option?. [online] Available at: <https://sagaratechnology.medium.com/mobile-apps-vs-web-apps-which-is-the-better-option-868106c88730> [Accessed 29 March 2022]."
               }
+=======
+              [10]"Native, Web or Hybrid Apps? What's The Difference?", MobiLoud, 2022. [Online]. Available: https://www.mobiloud.com/blog/native-web-or-hybrid-apps. [Accessed: 29- Mar- 2022].            </li>
+            <li>
+              [11]"Flutter vs React Native – What to Choose in 2022?", Droids On Roids, 2022. [Online]. Available: https://www.thedroidsonroids.com/blog/flutter-vs-react-native-what-to-choose-in-2021#f10. [Accessed: 28- Mar- 2022].
+            </li>
+            <li>
+              [12]"Mobile Apps vs Web — Apps: Which is the Better Option?", Medium, 2022. [Online]. Available: https://sagaratechnology.medium.com/mobile-apps-vs-web-apps-which-is-the-better-option-868106c88730. [Accessed: 29- Mar- 2022].
+            </li>
+            <li>
+              [13]"Angular vs React vs Vue: Which Framework to Choose in 2022", CodeinWP, 2022. [Online]. Available: https://www.codeinwp.com/blog/angular-vs-vue-vs-react/#who-wins. [Accessed: 29- Mar- 2022].
+            </li>
+            <li>
+              [14]"The Good and the Bad of Node.js Web App Development", AltexSoft, 2022. [Online]. Available: https://www.altexsoft.com/blog/engineering/the-good-and-the-bad-of-node-js-web-app-development/. [Accessed: 29- Mar- 2022].
+            </li>
+            <li>
+              [15]"Django vs Node.js: Which One is Better For Web Development?", Monocubed, 2022. [Online]. Available: https://www.monocubed.com/blog/django-vs-node-js/#:~:text=The%20main%20difference%20between%20Django,on%20client%2Dside%20web%20applications. [Accessed: 29- Mar- 2022].
+            </li>
+            <li>
+              [16]"Django vs Express: 2 Best Web Frameworks Compared in 2022", Monocubed, 2022. [Online]. Available: https://www.monocubed.com/blog/django-vs-express/#:~:text=In%20Django%20vs%20Express.,easily%20negated%20by%20experienced%20developers. [Accessed: 29- Mar- 2022].
+            </li>
+            <li>
+              [17]A. Sharma, R. Verma and M. Gaikwad, "MongoDB vs SQL Databases: 4 Comprehensive Aspects", Learn | Hevo, 2022. [Online]. Available: https://hevodata.com/learn/mongodb-vs-sql/. [Accessed: 29- Mar- 2022].
+            </li>
+            <li>
+              [18]Mongodb.com, 2022. [Online]. Available: https://www.mongodb.com/docs/manual/core/timeseries-collections/. [Accessed: 29- Mar- 2022].
+>>>>>>> 4423f0a5dd5f8deb0f97c935e43dbb4bae810acf
             </li>
           </ol>
         </div>
