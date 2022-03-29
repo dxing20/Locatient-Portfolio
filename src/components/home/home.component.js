@@ -13,17 +13,17 @@ function Home() {
               delay={100}
             >
               <p>
-                Finding patients in hospital could be a critical yet heptic
+                Finding patients in hospital could be a critical yet hectic
                 task. Precious time and efforts are wasted on monotonous and
-                trivial searching. With the covid-19 pandemic, the situation
+                trivial searching. With the Covid-19 pandemic, the situation
                 became increasingly apparent. In seek for a possible solution,
                 Locatient was developed.
               </p>
               <p>
-                Locatient uses a collection of qrcode wristbands, scanners, and
-                softwares to acheive reliable in-door tracking and presents the
-                data in a organized manner for staffs to utilize. When a new
-                patient is registered in the system, a unique qrcode and hashed
+                Locatient uses a collection of QR code wristbands, scanners, and
+                software to achieve reliable in-door tracking and presents the
+                data in a organized manner for staff to utilize. When a new
+                patient is registered in the system, a unique QR code and hashed
                 identifier will be generated. With this, the patient could
                 willingly scan QR codes to share their location with the rest of
                 the staff members. Their data will be organized in a visually
@@ -31,10 +31,10 @@ function Home() {
                 service.
               </p>
               <p>
-                With the system, staffs in hospital will no longer need to
+                With the system, staff in hospital will no longer need to
                 painstakingly look for patients, and can immediatly give care to
                 the ones who needs it. We hope Locatient could reduce tedious
-                efforts wasted by staffs and give precious time to the
+                efforts wasted by staff and give precious time to the
                 treatments of patients.
               </p>
             </AnimationOnScroll>
@@ -47,7 +47,7 @@ function Home() {
               duration={1}
               delay={0}
             >
-              <p>Abstact</p>
+              <p>Abstract</p>
             </AnimationOnScroll>
           </div>
         </div>
@@ -73,7 +73,7 @@ function Home() {
               duration={1}
               delay={100}
             >
-              <p>&#127775; Locatient have three primary features.</p>
+              <p>&#127775; Locatient has three primary features.</p>
             </AnimationOnScroll>
           </div>
           <div className="three">
@@ -108,7 +108,7 @@ function Home() {
                 <div className="feature">Data Visualization</div>
                 <div className="detail">
                   Too much data clustered together could make a already
-                  cumbersome task worst. Locatient provides a dashboard with
+                  cumbersome task worse. Locatient provides a dashboard with
                   customizable data focus for each device as well as analytics
                   to aid the visualization.
                 </div>
