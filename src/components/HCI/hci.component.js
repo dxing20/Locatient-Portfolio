@@ -102,23 +102,86 @@ const HCI = () => {
       <div className="content-block">
         <div className="subtitle">Prototype</div>
         <div className="text">
+          <div className="case">Wireframe 1</div>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-            autem culpa voluptates eveniet veritatis aspernatur repellat
-            exercitationem soluta, corporis numquam labore iusto, delectus
-            corrupti expedita error accusantium assumenda, aut iure?
+            Based on the sketch, we made the first version of our interactive
+            wireframes on figma. We followed most of the layouts on sketch 1 but
+            made some minor adjustments. The following is the picture of the
+            login and data display. For reason disscussed below, this was not
+            our final wireframe.
+          </p>
+          <img className="smallimg" src="images/wf1_2.png" alt="" />
+          <img className="smallimg" src="images/wf1_1.png" alt="" />
+          <p>
+            There wasn't any significant problem with this design; However, we
+            felt it was not good enough. Firstly, it would not be very
+            extendible with new features if another group were to carry on with
+            this project. As a POC, we want our app to be a good foundation for
+            future work. Secondly, the UI design does not demonstrate the
+            material UI theme we planned for the actual UI frontend. During
+            simulated user testing, we noted that the design is not
+            particularily eye pleasing. Lastly, we wanted to include at least
+            some analytics in the "could have" sections of the MoSCoW list, and
+            this, as a template to work upon, does not seem ideal.
+          </p>
+          <div className="case">Wireframe 2</div>
+          <p>
+            Learning the lesson from Wireframe 1, we switched up the tools to
+            adobe XD and designed with many additional features in mind. The
+            following is created using the adobe material UI pack.
+          </p>
+          <img className="smallimg" src="images/wf2_1.png" alt="" />
+          <img className="smallimg" src="images/wf2_2.png" alt="" />
+          <p>
+            Although the basic functionalities are the same, we thought that
+            this version was a better template to begin development with. It had
+            a more intuitive and navigatable layout. Tables and controls seem to
+            be much more organized. With the card based layout, It also has a
+            lot more room we can extend features into.
           </p>
         </div>
       </div>
 
       <div className="content-block">
-        <div className="subtitle">Summary</div>
+        <div className="subtitle">Highlights</div>
         <div className="text">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-            autem culpa voluptates eveniet veritatis aspernatur repellat
-            exercitationem soluta, corporis numquam labore iusto, delectus
-            corrupti expedita error accusantium assumenda, aut iure?
+            With the decision in HCI, we created a solid foundation to build up
+            a our application. Following are pictures from the home page which
+            we think demonstrates the manifestation perfectly.
+          </p>
+          <div className="case">Material Design</div>
+          <img className="smallimg" src="images/fash.png" alt="" />
+          <div className="case">Additional Analytics</div>
+          <img className="smallimg" src="images/ana.png" alt="" />
+          <div className="case">Intuitive Components</div>
+          <img className="smallimg" src="images/login.png" alt="" />
+          <div className="case">Clear & Powerful Table</div>
+          <img className="smallimg" src="images/table.png" alt="" />
+          <div className="case">Responsive Design</div>
+          <img className="smallimg" src="images/respon.png" alt="" />
+        </div>
+      </div>
+
+      <div className="content-block">
+        <div className="subtitle">Additional Information</div>
+        <div className="text">
+          <div className="case">NHS Server Integration Dashboard</div>
+          <p>
+            The mock application for api syncing interaction/admin dashboard was
+            not designed specifically for user usage since it was created due to
+            limitations of integration with any existing NHS servers. It
+            followed the single rule of simplicity while allowing it to simulate
+            the operations the server would take to make the same syncing api
+            calls.
+          </p>
+          <div className="case">Scanning App</div>
+          <p>
+            The scanning app was created due to limitation in manufacturing pcb
+            and custom devices in this project. It was never intened to have a
+            user interface during deployment and the poc we created for it only
+            needed to scan and make a request; Therefore, it would not make
+            sense for it to be included in HCI.
           </p>
           <div className="case">References</div>
           <ol>
@@ -138,6 +201,16 @@ const HCI = () => {
               usability heuristics for user interface design. Nielsen Norman
               Group. Retrieved March 28, 2022, from
               https://www.nngroup.com/articles/ten-usability-heuristics/
+            </li>
+            <li>
+              How to make a website more engaging in 15 easy steps. WebFX.
+              (2022, February 22). Retrieved March 29, 2022, from
+              https://www.webfx.com/web-design/learn/how-to-make-website-more-engaging/{" "}
+            </li>
+            <li>
+              Veeraraghavan, D. (2020, July 27). Let's design data tables.
+              Medium. Retrieved March 29, 2022, from
+              https://uxdesign.cc/lets-design-data-tables-bf065a60e588{" "}
             </li>
           </ol>
         </div>

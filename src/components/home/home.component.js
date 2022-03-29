@@ -17,10 +17,25 @@ function Home() {
                 task. Precious time and efforts are wasted on monotonous and
                 trivial searching. With the covid-19 pandemic, the situation
                 became increasingly apparent. In seek for a possible solution,
-                Locatient was developed. Locatient uses a collection of qrcode
-                wristbands, scanners, and softwares to acheive reliable in-door
-                tracking and presents the data in a organized manner for staffs
-                to utilize.
+                Locatient was developed.
+              </p>
+              <p>
+                Locatient uses a collection of qrcode wristbands, scanners, and
+                softwares to acheive reliable in-door tracking and presents the
+                data in a organized manner for staffs to utilize. When a new
+                patient is registered in the system, a unique qrcode and hashed
+                identifier will be generated. With this, the patient could
+                willingly scan QR codes to share their location with the rest of
+                the staff members. Their data will be organized in a visually
+                intuitive dashboard and be available to export to the NHS
+                service.
+              </p>
+              <p>
+                With the system, staffs in hospital will no longer need to
+                painstakingly look for patients, and can immediatly give care to
+                the ones who needs it. We hope Locatient could reduce tedious
+                efforts wasted by staffs and give precious time to the
+                treatments of patients.
               </p>
             </AnimationOnScroll>
           </div>
@@ -37,6 +52,8 @@ function Home() {
           </div>
         </div>
       </div>
+      <div className="spacing"></div>
+      <div className="spacing"></div>
       <div className="block-r">
         <div className="three-sided">
           <div className="title">
