@@ -42,7 +42,7 @@ const Requirements = () => {
             <li>Automated activity logging process with minimal effort.</li>
             <li>
               Efficient, intuitive and secure dashboard for accessing logging
-              data realtime.
+              data.
             </li>
             <li>Easy integration and data sharing with existing system.</li>
             <li>High accessibilty in multiple platforms.</li>

@@ -186,31 +186,29 @@ const HCI = () => {
           <div className="case">References</div>
           <ol>
             <li>
-              What is material design? The Interaction Design Foundation.
-              (n.d.). Retrieved March 28, 2022, from
-              https://www.interaction-design.org/literature/topics/material-design#:~:text=Material%20Design%20is%20an%20Android,immersive%2C%20platform%2Dconsistent%20GUIs.{" "}
+              {
+                "The Interaction Design Foundation. 2022. What is Material Design?. [online] Available at: <https://www.interaction-design.org/literature/topics/material-design#:~:text=Material%20Design%20is%20an%20Android,immersive%2C%20platform%2Dconsistent%20GUIs.> [Accessed 29 March 2022]."
+              }
             </li>
             <li>
-              World Leaders in Research-Based User Experience. (n.d.). How to
-              measure learnability of a user interface. Nielsen Norman Group.
-              Retrieved March 28, 2022, from
-              https://www.nngroup.com/articles/measure-learnability/#:~:text=Learnability%20considers%20how%20easy%20it,become%20efficient%20at%20that%20task.
+              {
+                "W. L. in R.-B. U. Experience, “How to Measure Learnability of a User Interface,” Nielsen Norman Group. https://www.nngroup.com/articles/measure-learnability/#:~:text=Learnability%20considers%20how%20easy%20it."
+              }
             </li>
             <li>
-              World Leaders in Research-Based User Experience. (n.d.). 10
-              usability heuristics for user interface design. Nielsen Norman
-              Group. Retrieved March 28, 2022, from
-              https://www.nngroup.com/articles/ten-usability-heuristics/
+              {
+                "J. Nielsen, “10 Heuristics for User Interface Design,” Nielsen Norman Group, Nov. 15, 2020. https://www.nngroup.com/articles/ten-usability-heuristics/."
+              }
             </li>
             <li>
-              How to make a website more engaging in 15 easy steps. WebFX.
-              (2022, February 22). Retrieved March 29, 2022, from
-              https://www.webfx.com/web-design/learn/how-to-make-website-more-engaging/{" "}
+              {
+                "“How to Make a Website More Engaging in 15 Easy Steps,” WebFX. https://www.webfx.com/web-design/learn/how-to-make-website-more-engaging/."
+              }
             </li>
             <li>
-              Veeraraghavan, D. (2020, July 27). Let's design data tables.
-              Medium. Retrieved March 29, 2022, from
-              https://uxdesign.cc/lets-design-data-tables-bf065a60e588{" "}
+              {
+                "D. Veeraraghavan, “Let's design data tables,” Medium, Jul. 27, 2020. https://uxdesign.cc/lets-design-data-tables-bf065a60e588 (accessed Mar. 29, 2022)."
+              }
             </li>
           </ol>
         </div>
