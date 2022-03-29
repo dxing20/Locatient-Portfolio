@@ -65,16 +65,17 @@ const SystemDesign = () => {
         <div className="text">
           <p>
             Our data schema includes only basic fields. Since we cannot get the
-            actual fields stored in NHS servers, we will only be including bare
-            minimum the field to prove the usability of the application. If
-            others were to work off this implementation, the fields can be added
-            easily as they won't be the primary or natural key used in the
-            system. The ER diagram in shown below.
+            actual fields stored in NHS servers, this will suffice to prove the
+            usability of the design. If others plan to build on this
+            implementation, the fields can be added easily as they won't be the
+            primary or natural keys used in the system. The ER diagram in shown
+            below.
           </p>
           <img src="images/dbs.png" alt="" className="smallimg" />
           <p>
-            Indices are made specifically for sorted data querying and the time
-            of logs are optimized by mongodb time-series collections.
+            There are three types of indices we used, compound index for
+            specific queries, TTL for activity record and expiry, and unique
+            indices for sorting and querying general activity data.
           </p>
           <img src="images/dbi.png" alt="" className="smallimg" />
         </div>
@@ -90,9 +91,11 @@ const SystemDesign = () => {
             data are for both NHS services and dashboard apps to retreive
             logging data. The following documentation is recored with postman.
           </p>
-          <div className="case">Picture of documentation</div>
-          <img src="images/apis.png" alt="" className="smallimg" />
           <div className="case">API Documentation</div>
+          <img src="images/adminAPI.png" alt="" className="longimg" />
+          <img src="images/loggingAPI.png" alt="" className="longimg" />
+          <img src="images/dataAPI.png" alt="" className="longimg" />
+          <div className="case">API Documentation Links</div>
           <ul>
             <li>
               <a href="https://documenter.getpostman.com/view/19506857/UVyoWJ9N">

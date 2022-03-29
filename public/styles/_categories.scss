@@ -127,6 +127,19 @@
         width: 60%;
       }
     }
+    .longimg {
+      width: 50%;
+      object-fit: contain;
+      @media screen and (max-width: $monitor) {
+        width: 55%;
+      }
+      @media screen and (max-width: $laptop) {
+        width: 55%;
+      }
+      @media screen and (max-width: $tablet) {
+        width: 60%;
+      }
+    }
     p {
       img {
         display: block;
