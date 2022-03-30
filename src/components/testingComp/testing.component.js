@@ -158,9 +158,9 @@ const Testing = () => {
             The project did exactly what I initially wanted. You guy did an
             amazing job and absolutly nailed it. Me and my colleagues could
             really use software like this.
-          </p>
-        </div>
-      </div>
+          </p >
+        </div >
+      </div >
       <div className="content-block">
         <div className="subtitle">Summary</div>
         <div className="text">
@@ -201,7 +201,7 @@ const Testing = () => {
           </ol>
         </div>
       </div>
-    </div>
+    </div >
   );
 };
 
