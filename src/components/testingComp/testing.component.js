@@ -108,8 +108,12 @@ const Testing = () => {
             In the video snippets below, Cypress simulates a user’s path from the start to finish.
           </p>
           <div className="case">Viewing of Logs</div>
+          <br />
+          <br />
           <iframe width="560" height="315" src="https://www.youtube.com/embed/41tiybScuwY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           <div className="case">Managing Favourites</div>
+          <br />
+          <br />
           <iframe width="560" height="315" src="https://www.youtube.com/embed/0eeTgNuNvdA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
       </div>
