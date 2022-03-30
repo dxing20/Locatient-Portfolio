@@ -170,7 +170,15 @@ function Home() {
           >
             <div className="title">Introduction Video</div>
             <div className="subtitle">A fast introduction to our project</div>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/ay531ZaejhA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/ay531ZaejhA"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
           </AnimationOnScroll>
         </div>
       </div>
@@ -207,7 +215,7 @@ function Home() {
             >
               <div className="card">
                 <div className="icon">
-                  <img src="/images/temp.jpg" alt="" />
+                  <img src="/images/danny.jpeg" alt="" />
                 </div>
                 <div className="name">Danny Xing</div>
                 <div className="email">danny.xing.20@ucl.ac.uk</div>
@@ -226,7 +234,7 @@ function Home() {
             >
               <div className="card">
                 <div className="icon">
-                  <img src="/images/temp.jpg" alt="" />
+                  <img src="/images/chengloo.jpg" alt="" />
                 </div>
                 <div className="name">Cheng Loo</div>
                 <div className="email">cheng.loo.20@ucl.ac.uk</div>
@@ -244,7 +252,7 @@ function Home() {
             >
               <div className="card">
                 <div className="icon">
-                  <img src="/images/temp.jpg" alt="" />
+                  <img src="/images/guodong.jpg" alt="" />
                 </div>
                 <div className="name">Guodong Liu</div>
                 <div className="email">zcabgli@ucl.ac.uk</div>
