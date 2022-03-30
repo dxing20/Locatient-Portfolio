@@ -119,8 +119,8 @@ const Implementation = () => {
             <br />
             The src directory contains components, services, App.js, atom.js,
             and index.js. Components folder contains UI componenents gets
-            selectively rendered inside "App.js", and the service folder
-            contains axio's API request definitions.
+            selectively rendered inside App.js, and the service folder contains
+            axio's API request definitions.
           </p>
           <div className="case">Fetching data from API</div>
           <img src="images/Axio.png" alt="" className="tinyimg" />
@@ -185,14 +185,16 @@ const Implementation = () => {
       <div className="content-block">
         <div className="subtitle">Others</div>
         <div className="text">
-          <div className="case">Intergration app</div>
+          <div className="case">Intergration App</div>
           <p>
             The structure of this administrative app is developed similar to the
             dashboard application to simulate data management from NHS services.
             Since the implementation are mostly similar to the dashboard, no
             repetitive explaination will be given.
           </p>
-          <div className="case">Scanner app</div>
+          <img className="smallimg" src="images/adminUI.png" alt="" />
+          <img className="smallimg" src="images/patientUI.png" alt="" />
+          <div className="case">Scanner App</div>
           <p>
             Similar to the integration app, this is not expected to be further
             developed and improved and is only a POC. This app uses Flutter and
@@ -201,6 +203,7 @@ const Implementation = () => {
           </p>
         </div>
       </div>
+      <div className="spacing"></div>
     </div>
   );
 };
