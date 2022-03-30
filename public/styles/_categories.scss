@@ -112,6 +112,11 @@
       border: 3px solid rgb(44, 3, 77);
       width: 60%;
       margin-top: 3em;
+      transition: all 0.2s ease;
+
+      &:hover {
+        transform: scale(1.3);
+      }
     }
     .smallimg {
       width: 35%;
@@ -127,6 +132,20 @@
         width: 60%;
       }
     }
+    .tinyimg {
+      width: 15%;
+      max-height: 50vh;
+      object-fit: contain;
+      @media screen and (max-width: $monitor) {
+        width: 25%;
+      }
+      @media screen and (max-width: $laptop) {
+        width: 35%;
+      }
+      @media screen and (max-width: $tablet) {
+        width: 45%;
+      }
+    }
     .longimg {
       width: 50%;
       object-fit: contain;
@@ -139,12 +158,26 @@
       @media screen and (max-width: $tablet) {
         width: 60%;
       }
+      &:hover {
+        transform: scale(1);
+      }
     }
     p {
       img {
         display: block;
         margin: 2em auto;
         width: 40%;
+      }
+      .fullimg {
+        display: block;
+        margin: 2em auto;
+        width: 50%;
+        @media screen and (max-width: $laptop) {
+          width: 80%;
+        }
+        @media screen and (max-width: $monitor) {
+          width: 75%;
+        }
       }
     }
   }
