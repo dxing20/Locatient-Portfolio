@@ -13,28 +13,28 @@ const Requirements = () => {
           <p>
             With the number of patients in large hospitals, organizing patients,
             planning schedules, and efficiently locating them is not a trivial
-            task. Staff often has a tight schedule, making the time used looking
+            task. Staff members often have a tight schedule, making the time used looking
             for patients costly and fruitless. In addition, keeping a record of
             these activities is tricky, often involving monotonous and laborious
             tasks such as manually recording on paper forms. For our specific
-            case, excel was used in the NHS hospital for tracking timestamps for
-            pre and post opertation activities. However, the timestamps is often
+            case, Excel was used in the NHS hospital for tracking timestamps for
+            pre and post operation activities. However, the timestamps are often
             recorded only after a significant period of time because of the
-            inconvinience. This causes inaccurrate timestamps clustered around
+            inconvenience. This causes inaccurrate timestamps clustered around
             the full minute marks. For the most part, the whole system became an
             annoyance for the staff. Locatient attempts to reduce the hassle of
             this process, making locating patients and recording the activities
-            a simple task of checking on an app.
+            a simple task of checking an app.
           </p>
 
           <div className="case">Problems</div>
           <ul>
-            <li>Inconvinience of manually entering data into forms.</li>
+            <li>Inconvenience of manually entering data into forms.</li>
             <li>
-              Staffs have to manually search for patients through different
+              Staff have to manually search for patients through different
               rooms, wasting a lot of time.
             </li>
-            <li>Records are not realtime and is inefficient to access.</li>
+            <li>Records are not real-time and is inefficient to access.</li>
             <li>Lack of dedicated software for organizing the data.</li>
           </ul>
           <div className="case secondary">Locatient Solution</div>
@@ -55,8 +55,8 @@ const Requirements = () => {
           <p>
             Following the first introduction meeting, interviews are conducted
             which we used to capture requirements. Most of the interview
-            questions are predetermiend but some are added to allow better
-            understanding. A subset of conversation is listed below.
+            questions are predetermined but some are added to allow better
+            understanding. A subset of a conversation is listed below.
           </p>
 
           <ol className="qna">
@@ -66,7 +66,7 @@ const Requirements = () => {
               </div>
               <br />
               <div className="QA">
-                A: This software should track patients location in the hospital
+                A: This software should track patients' locations in the hospital
                 and log timestamps.
               </div>
             </li>
@@ -76,7 +76,7 @@ const Requirements = () => {
               </div>
               <br />
               <div className="QA">
-                A:For example, finding patients enables us to give better care
+                A: For example, finding patients enables us to give better care
                 to them before and after their operations. Having this system
                 would make this process more efficient and would save a lot of
                 time.
@@ -89,19 +89,19 @@ const Requirements = () => {
               <br />
               <div className="QA">
                 A: The current system is difficult to use because it is tedious
-                for doctors to manually enter all the data into the cells. The
-                system for accessing the data with-in the database is also
-                inefficient
+                for doctors to manually enter all the data into cells. The
+                system for accessing the data within the database is also
+                inefficient.
               </div>
             </li>
             <li>
               <div className="QA">
-                Q: Would a online platform work with the available hardwares in
+                Q: Would an online platform work with the available hardware in
                 the hospital?
               </div>
               <br />
               <div className="QA">
-                A: A online platform which works on all system is ideal.
+                A: A online platform which works on all systems is ideal.
               </div>
             </li>
           </ol>
@@ -113,21 +113,21 @@ const Requirements = () => {
           <p>
             After the first interview, some research was done on the possible
             approaches. However, we encoutered two major issues. First, because
-            of the software's need to gain access to personally Identifiable
+            of the software's need to gain access to Personally Identifiable
             information (PID) when deployed, our software must pass&nbsp; NHS
             information governance{" "}
-            <a href="https://www.england.nhs.uk/ig/about/">(ig)</a>
+            <a href="https://www.england.NHS.uk/ig/about/">(ig)</a>
             ,&nbsp; Information Commissioner's office{" "}
             <a href="https://ico.org.uk/">(ICO)</a>, and&nbsp; Data protection
             impact assessments{" "}
             <a href="https://ico.org.uk/for-organisations/guide-to-data-protection/guide-to-the-general-data-protection-regulation-gdpr/accountability-and-governance/data-protection-impact-assessments/">
               (DPIA)
             </a>
-            . Secondly, common indoor positioning systems (IPS) require ethical
-            clearence which takes time. We were instructed that this was not
+            . Secondly, common Indoor Positioning Systems (IPS) require ethical
+            clearance which takes time. We were instructed that this was not
             allowed for this project. Thus, strategies like camera tracking are
             ruled out. A follow-up meeting was scheduled with our client to
-            disscuse the deployment requirements of our app.
+            discuss the deployment requirements of our app.
           </p>
 
           <ol className="qna">
@@ -167,7 +167,7 @@ const Requirements = () => {
         </div>
       </div>
       <div className="content-block">
-        <div className="subtitle">Client Requriements</div>
+        <div className="subtitle">Client Requirements</div>
         <div className="text">
           <p>
             With the information we gathered from the clients, we listed down
@@ -177,7 +177,7 @@ const Requirements = () => {
           <ul>
             <li>Reliable indoor positioning system.</li>
             <li>IPS should be reliable and minimize human tasks.</li>
-            <li>A backend which would integrate with existing nhs system.</li>
+            <li>A backend which would integrate with existing NHS system.</li>
             <li>
               Backend should be able to sync with changes like patients leaving
               and joining, replacing scanners, and etc.
@@ -198,12 +198,12 @@ const Requirements = () => {
         <div className="subtitle">Goals</div>
         <div className="text">
           <p>
-            The goals of Locatient is to make a service which can provide staffs
-            with accessible and realtime data, including helping staffs to
-            locate patients without wasting exesive time and efforts. This will
+            The goal of Locatient is to make a service which can provide staff
+            with accessible and realtime data, including helping staff to
+            locate patients without wasting excessive time and effort. This will
             allow patients to gain help faster and allow care to be more
-            responsive in a large hospital. The dashboard and api will also help
-            keep the data organized, preventing the current inconviniences
+            responsive in a large hospital. The dashboard and API will also help
+            keep the data organized, preventing the current inconveniences
             caused by massive tables of data.
           </p>
         </div>
@@ -226,9 +226,9 @@ const Requirements = () => {
         <div className="text">
           <p>
             After we gained understanding of our users and conducted the
-            nessasary researches to conclude our approach with qrcode, we drawn
-            the use case diagram to show how patients and staffs will interact
-            with our system. This diagram contains all the must have features
+            nessasary research to conclude our approach with QR codes, we constructed
+            a use case diagram to show how patients and staff will interact
+            with our system. This diagram contains all the must-have features
             which are core functionalities of our application. Additional
             features like analytics are not included in this version.
           </p>
@@ -240,9 +240,9 @@ const Requirements = () => {
         <div className="subtitle">MoSCoW List</div>
         <div className="text">
           <p>
-            Lastly, we elaborated the requirements into a MoSCoW list which can
-            be referenced during designing and implementations. It will also
-            gave us a basis of prioritizing tasks.
+            Lastly, we transformed the requirements into a MoSCoW list which can
+            be referenced during design and implementation. It will also
+            give us a basis of prioritizing tasks.
           </p>
           <img src="images/moscow1.png" alt="" />
           <img src="images/moscow2.png" alt="" />

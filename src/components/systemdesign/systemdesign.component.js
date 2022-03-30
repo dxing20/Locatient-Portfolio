@@ -14,67 +14,67 @@ const SystemDesign = () => {
             Locatient is a system consisting of many parts: the scanners, the
             backend, the dashboard, and the testing application for integration.
             The system landscape diagram is shown below to get a clear
-            understanding of how each part interacts with one another.
+            understanding of how each part interact with one another.
           </p>
           <img src="images/System.png" alt="" />
           <div className="case">Scanner App</div>
           <p>
-            The scanner app is a POC for actual QR code scanning devices. Since
-            we cannot manufacture or create such device in this project, a
-            mobile app with the corresponding functionality is created as POC.
-            The scanner app will only have the single functionality of scanning
-            a QR code and updating the hash, time, location, and api key to the
-            server. It will be developed in flutter where it can be compiled to
-            become cross platform.
+            The scanner app is a Proof-of-Concept (POC) for actual QR code scanning devices. Since
+            we cannot manufacture or create such devices in this project, a
+            mobile app with the corresponding functionality is created as a PoC.
+            The scanner app will only have a single function of scanning
+            QR codes and updating the hash, time, location, and API key to the
+            server. It will be developed in Flutter where it can be compiled to
+            be cross platform.
           </p>
           <div className="case">Database</div>
           <p>
-            Mongodb will be hosted on Mongodb Atlas and will act as our primary
-            database. Mongodb features time-series collections which
+            MongoDB will be hosted on MongoDB Atlas and will act as our primary
+            database. MongoDB features time-series collections which
             automatically index the time field and manages operations related to
-            it. This is especially benificial to the logging data locatient
+            it. This is especially benificial to the logging data Locatient
             collects.
           </p>
-          <div className="case">POC App for integration with nhs</div>
+          <div className="case">PoC App for integration with NHS</div>
           <p>
-            Since actual integration is not possible as a part of this project,
-            an app was created to mimic the api requests. The app is designed to
-            allow simulating the steps of making a request and visually shows
+            Since actual integration is not possible as part of this project,
+            an app was created to mimic the API requests. The app is designed to
+            allow simulating the steps of making a request and visually show
             the results returned. The app uses administrative privilege which
             can access and register objects not accessible from the dashboard.
-            The app will be hosted on GCP.
+            The app will be hosted on Google Cloud Platform (GCP).
           </p>
           <div className="case">Backend</div>
           <p>
-            The backend will contain api for the flutter app, the dashboard, and
+            The backend will contain API for the flutter app, the dashboard, and
             the administrative requests. All three of them have separate
-            privilege levels and have access to different subsets of the api.
-            The api is hosted on GCP.
+            privilege levels and have access to different subsets of the API.
+            The API is hosted on GCP.
           </p>
           <div className="case">Dashboard</div>
           <p>
             The dashboard fetches data to be displayed as visually organizated
-            graphs and analytics. It is the UI for staffs in the hospital. It is
+            graphs and analytics. It is the User Interface (UI) for staff in the hospital. It is
             also the only interface designed to be interacted by human when
             deployed.
           </p>
         </div>
       </div>
       <div className="content-block">
-        <div className="subtitle">Mongodb Database Diagram</div>
+        <div className="subtitle">MongoDB Database Diagram</div>
         <div className="text">
           <p>
             Our data schema includes only basic fields. Since we cannot get the
             actual fields stored in NHS servers, this will suffice to prove the
             usability of the design. If others plan to build on this
             implementation, the fields can be added easily as they won't be the
-            primary or natural keys used in the system. The ER diagram in shown
+            primary or natural keys used in the system. The Entity Relationship (ER) diagram in shown
             below.
           </p>
           <img src="images/dbs.png" alt="" className="smallimg" />
           <p>
             There are three types of indices we used, compound index for
-            specific queries, TTL for activity record and expiry, and unique
+            specific queries, Time-to-live (TTL) for activity record and expiry, and unique
             indices for sorting and querying general activity data.
           </p>
           <img src="images/dbi.png" alt="" className="smallimg" />
@@ -88,8 +88,8 @@ const SystemDesign = () => {
             The backend API is catergorized into three parts: logging,
             administration, and data. Logging is used by the scanner,
             administration is used by NHS services to manage our system, and
-            data are for both NHS services and dashboard apps to retreive
-            logging data. The following documentation is recored with postman.
+            data are for both NHS services and dashboard apps to retrieve
+            logging data. The following documentation is recorded with Postman.
           </p>
           <div className="case">API Documentation</div>
           <img src="images/adminAPI.png" alt="" className="longimg" />
