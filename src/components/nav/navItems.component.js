@@ -42,7 +42,7 @@ function NavItems({ doSlider }) {
       />
       <NavIcon
         pathD={svgPaths.githubPath}
-        addr={"https://github.com/dxing20/NHS-indoor-positioning-system-POC/"}
+        addr={"https://github.com/dxing20/Locatient.git"}
       />
     </div>
   );

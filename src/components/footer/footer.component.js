@@ -76,9 +76,18 @@ function Footer({ doSlider }) {
             </p>
           </div>
           <div className="icons">
-            <FooterIcon pathD={svgPaths.emailPath} />
-            <FooterIcon pathD={svgPaths.blogPath} />
-            <FooterIcon pathD={svgPaths.githubPath} />
+            <FooterIcon
+              pathD={svgPaths.emailPath}
+              addr={"mailto:danny.xing.20@ucl.ac.uk"}
+            />
+            <FooterIcon
+              pathD={svgPaths.blogPath}
+              addr={"https://comp0016devblog.netlify.app"}
+            />
+            <FooterIcon
+              pathD={svgPaths.githubPath}
+              addr={"https://github.com/dxing20/Locatient.git"}
+            />
           </div>
         </div>
         <div className="navigations">
