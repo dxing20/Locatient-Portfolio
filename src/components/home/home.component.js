@@ -34,8 +34,8 @@ function Home() {
                 With the system, staff in hospital will no longer need to
                 painstakingly look for patients, and can immediatly give care to
                 the ones who needs it. We hope Locatient could reduce tedious
-                efforts wasted by staff and give precious time to the
-                treatments of patients.
+                efforts wasted by staff and give precious time to the treatments
+                of patients.
               </p>
             </AnimationOnScroll>
           </div>
@@ -276,6 +276,24 @@ function Home() {
                   Learn how we distributed our time and organized the project!
                 </AnimationOnScroll>
               </div>
+              <div className="minor">Planning Gantt Chart</div>
+              <div className="chart">
+                <AnimationOnScroll
+                  animateIn="animate__fadeInUp"
+                  animateOut="animate__fadeOutUp"
+                  duration={1}
+                  delay={300}
+                  style={{
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    width: "100%",
+                  }}
+                >
+                  <img src="/images/gantt2.png" alt="" />
+                </AnimationOnScroll>
+              </div>
+              <div className="minor">Development Gantt Chart</div>
               <div className="chart">
                 <AnimationOnScroll
                   animateIn="animate__fadeInUp"

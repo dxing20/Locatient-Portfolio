@@ -1953,6 +1953,21 @@ div.three-sided .text p {
   font-weight: 600;
 }
 
+.chart-con .minor {
+  position: relative;
+  padding: 0 10%;
+  text-align: left;
+  font-size: large;
+  font-weight: 700;
+  margin-top: 3em;
+  color: #4a377e;
+  width: 100vw;
+}
+
+.chart-con .minor p {
+  margin: 0;
+}
+
 .chart-con .chart {
   margin-top: 3em;
   width: 100%;

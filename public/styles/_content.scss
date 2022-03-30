@@ -429,6 +429,20 @@ div.three-sided {
       }
     }
   }
+
+  .minor {
+    position: relative;
+    p {
+      margin: 0;
+    }
+    padding: 0 10%;
+    text-align: left;
+    font-size: large;
+    font-weight: 700;
+    margin-top: 3em;
+    color: rgb(74, 55, 126);
+    width: 100vw;
+  }
   .chart {
     margin-top: 3em;
     width: 100%;
