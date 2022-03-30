@@ -170,7 +170,7 @@ function Home() {
           >
             <div className="title">Introduction Video</div>
             <div className="subtitle">A fast introduction to our project</div>
-            <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ay531ZaejhA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </AnimationOnScroll>
         </div>
       </div>
