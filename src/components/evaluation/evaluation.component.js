@@ -8,12 +8,16 @@ const Evaluation = () => {
         <div className="border"></div>
       </div>
       <div className="content-block">
-        <div className="subtitle">MoSCoW List Acheivement</div>
-        <div className="text"></div>
+        <div className="subtitle">MoSCoW List Achievement</div>
+        <div className="text">
+          <img src="images/achievement-table.png" alt="" />
+        </div>
       </div>
       <div className="content-block">
-        <div className="subtitle">Individual Contribution</div>
-        <div className="text"></div>
+        <div className="subtitle">Individual Contributions</div>
+        <div className="text">
+          <img src="images/individual-contributions-table.png" alt="" />
+        </div>
       </div>
       <div className="content-block">
         <div className="subtitle">Critical Evaluation</div>
