@@ -100,6 +100,17 @@ const Testing = () => {
             Cypress’ library is also vast and contains most functionalities that
             an E2E test would need.
           </p>
+          <div className="case">Cypress Testing</div>
+          <p>
+            Using Cypress, we were able to create 2 medium E2E tests that cover the key features of our dashboard: viewing and filtering logs, and managing favourites. The tests are built in a way that each component tested is distinct from one another, and will not be disrupted by new updates to the dashboard. Adding a new element to the component will not cause the tests to execute on an incorrect element, and will maintain the original testing goals.
+            <br />
+            <br />
+            In the video snippets below, Cypress simulates a user’s path from the start to finish.
+          </p>
+          <div className="case">Viewing of Logs</div>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/41tiybScuwY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <div className="case">Managing Favourites</div>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/0eeTgNuNvdA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
       </div>
       <div className="content-block">
