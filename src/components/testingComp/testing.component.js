@@ -12,7 +12,6 @@ const Testing = () => {
         <div className="text">
           <p>
             Front End Testing is a testing technique in which the User Interface (UI), functionality and usability of web applications or a software are tested.[1] It checks that the website’s or app’s presentation layer is error-free. This is done after every update to ensure that recent changes have not degraded any aspect of the UI.[2]
-
           </p>
           <div className="case">End-to-End (E2E) Testing</div>
           <p>
@@ -27,7 +26,6 @@ const Testing = () => {
             <br />
             <br />
             The choice in this case would be strong for Cypress as we are running a full-stack based on JavaScript, and running a JS-based testing framework would make testing simpler and more convenient. Cypress’ library is also vast and contains most functionalities that an E2E test would need.
-
           </p>
         </div>
       </div>
