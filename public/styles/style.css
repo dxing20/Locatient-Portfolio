@@ -2217,6 +2217,11 @@ div.three-sided .text p {
           transform: scale(1);
 }
 
+.content-block .text p .r {
+  color: #523883;
+  display: inline;
+}
+
 .content-block .text p img {
   display: block;
   margin: 2em auto;
