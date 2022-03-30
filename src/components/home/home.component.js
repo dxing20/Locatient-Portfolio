@@ -16,13 +16,13 @@ function Home() {
                 Finding patients in hospital could be a critical yet hectic
                 task. Precious time and efforts are wasted on monotonous and
                 trivial searching. With the Covid-19 pandemic, the situation
-                became increasingly apparent. In seek for a possible solution,
+                became increasingly apparent. In search for a possible solution,
                 Locatient was developed.
               </p>
               <p>
                 Locatient uses a collection of QR code wristbands, scanners, and
                 software to achieve reliable in-door tracking and presents the
-                data in a organized manner for staff to utilize. When a new
+                data in an organized manner for staff to utilize. When a new
                 patient is registered in the system, a unique QR code and hashed
                 identifier will be generated. With this, the patient could
                 willingly scan QR codes to share their location with the rest of
@@ -31,9 +31,9 @@ function Home() {
                 service.
               </p>
               <p>
-                With the system, staff in hospital will no longer need to
+                With the system, staff in hospitals will no longer need to
                 painstakingly look for patients, and can immediatly give care to
-                the ones who needs it. We hope Locatient could reduce tedious
+                the ones who need it. We hope Locatient could reduce tedious
                 efforts wasted by staff and give precious time to the treatments
                 of patients.
               </p>
