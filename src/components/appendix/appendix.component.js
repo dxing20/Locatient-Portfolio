@@ -33,7 +33,7 @@ const Appendix = () => {
         <div className="subtitle">Licensing</div>
         <div className="text">
           <div className="case">Licensing Table</div>
-          <img src="images/licensing.png" alt="" />
+          <img src="images/licensing-table(1).png" alt="" />
           <br />
           <br />
           <div className="subtitle">Licensing Chart</div>
